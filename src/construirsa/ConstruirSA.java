@@ -39,22 +39,39 @@ public class ConstruirSA {
                 
                 //Ejercicio 3:
                 
-//            String sql1 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
-//                 + "VALUES (11, 123456, 'Torre', 'Victor', 1, 1)";
-//                 String sql2 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
-//                 + "VALUES (12, 654321, 'Gomez', 'Juana', 2, 0)";
-//                 String  sql3 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
-//                 + "VALUES (13, 7890, 'Sosa', 'Pedro', 1, 1)";
-//                
-//                 PreparedStatement ps1 = conexion.prepareStatement(sql1);
-//                 ps1.executeUpdate();
-//                
-//                 PreparedStatement ps2 = conexion.prepareStatement(sql2);
-//                 ps2.executeUpdate();
-//            
-//                 PreparedStatement ps3 = conexion.prepareStatement(sql3);
-//                 ps3.executeUpdate();    
-//          
+            String sql1 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
+                 + "VALUES (11, 123456, 'Torre', 'Victor', 1, 1)";
+                 String sql2 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
+                 + "VALUES (12, 654321, 'Gomez', 'Juana', 2, 0)";
+                 String  sql3 = "INSERT INTO empleado(id_empleado, dni, apellido, nombre, acceso, estado)"
+                 + "VALUES (13, 7890, 'Sosa', 'Pedro', 1, 1)";
+                
+                 PreparedStatement ps1 = conexion.prepareStatement(sql1);
+                 ps1.executeUpdate();
+                
+                 PreparedStatement ps2 = conexion.prepareStatement(sql2);
+                 ps2.executeUpdate();
+            
+                 PreparedStatement ps3 = conexion.prepareStatement(sql3);
+                 ps3.executeUpdate();    
+          
+
+
+
+                    /*
+                    Ejercicio 4 */
+                    String sql4 = "INSERT INTO herramienta(id_herramienta, nombre, descripcion, stock, estado)"
+                    + "VALUES (31, 'Pinza', 'Pinza de tipo punta', 15, 1)";
+                     String sql5 = "INSERT INTO herramienta(id_herramienta, nombre, descripcion, stock, estado)"
+                    + "VALUES (32, 'Serrucho', 'Serrucho de Carpintero', 7, 0)";
+                
+                     PreparedStatement ps4 = conexion.prepareStatement(sql4);
+                     ps1.executeUpdate();
+
+                     PreparedStatement ps5 = conexion.prepareStatement(sql5);
+                     ps2.executeUpdate();
+
+                   
             
             } catch (SQLException ex) {
                 JOptionPane.showMessageDialog(null,"Error al cargar Driver"+ex.getMessage());
